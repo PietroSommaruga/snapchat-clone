@@ -17,6 +17,8 @@ import { db, storage } from '../../firebase'
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
+
+
  
 function Preview() {
   const cameraImage = useSelector(selectcameraImage);
@@ -50,9 +52,9 @@ function Preview() {
         });
         navigate('/chats')
       })
-    },
-   )
-  }
+    }
+   );
+  };
 
   return (
     <div className='preview'>
